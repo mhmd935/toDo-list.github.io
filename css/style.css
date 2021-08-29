@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body {
+  font-family: "Titillium Web", sans-serif;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* container */
+.container {
+  width: 380px;
+}
+/* header */
+.header {
+  width: 380px;
+  height: 200px;
+  background-image: url("../img/wallpaperflare.com_wallpaper1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
+.clear {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 25px;
+}
+.clear i {
+  font-size: 25px;
+  color: #fff;
+}
+.clear i:hover {
+  cursor: pointer;
+  text-shadow: 1px 3px 5px #000;
+  transform: rotate(45deg);
+}
+#date {
+  position: absolute;
+  left: 10px;
+  bottom: 6px;
+  color: #fff;
+  font-size: 25px;
+}
+/* content */
+.content {
+  width: 380px;
+  height: 400px;
+  max-height: 400px;
+  background-color: #fff;
+  overflow: auto;
+}
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  width: 380px;
+  height: 45px;
+  min-height: 45px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.item i.co {
+  position: absolute;
+  font-size: 25px;
+  left: 10px;
+  top: 10px;
+}
+.item i.co:hover {
+  cursor: pointer;
+}
+.fa-check-circle {
+  color: #6eb200;
+}
+.item p.text {
+  position: absolute;
+  font-size: 20px;
+  left: 45px;
+  top: 5px;
+  background-color: #fff;
+  max-width: 285px;
+}
+.lineThrough {
+  text-decoration: line-through;
+  color: #ccc;
+}
+.item i.de {
+  position: absolute;
+  font-size: 25px;
+  right: 12px;
+  top: 10px;
+}
+.item i.de:hover {
+  color: #af0000;
+  cursor: pointer;
+}
+/* add item */
+.add-to-do {
+  position: relative;
+  width: 360px;
+  height: 40px;
+  background-color: #fff;
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.add-to-do i {
+  position: absolute;
+  font-size: 35px;
+  color: #4162f6;
+}
+.add-to-do input {
+  position: absolute;
+  left: 52px;
+  height: 35px;
+  width: 310px;
+  border: none;
+  background-color: transparent;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+}
+.add-to-do input:focus {
+  outline: none;
+}
+.add-to-do input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #4162f6;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+}
+.add-to-do input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #4162f6;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+}
+.add-to-do input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #4162f6;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+}
+.add-to-do input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #4162f6;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 340px;
+  }
+  .header {
+    width: 340px;
+    height: 170px;
+  }
+  #date {
+    bottom: 6px;
+    font-size:23px;
+  }
+  .content {
+    width: 340px;
+    height: 370px;
+    max-height: 370px;
+  }
+  .item {
+    width: 340px;
+    height: 43px;
+    min-height: 43px;
+  }
+  .item p.text {
+    left: 44px;
+  }
+  .add-to-do {
+    width: 320px;
+    height: 35px;
+  }
+  .add-to-do input {
+    width: 280px;
+  }
+}
+@media (max-width: 374.98px) {
+  .container {
+    width: 300px;
+  }
+  .header {
+    width: 300px;
+    height: 150px;
+  }
+  .clear {
+    top: 15px;
+    right: 16px;
+    width: 23px;
+  }
+  .clear i{
+   font-size: 23px;
+  }
+  #date {
+    bottom: 4px;
+    font-size: 21px;
+  }
+  .content {
+    width: 300px;
+    height: 370px;
+    max-height: 370px;
+  }
+  .item {
+    width: 300px;
+    height: 40px;
+    min-height: 40px;
+  }
+  .item i.co {
+    left: 7px;
+  }
+  .item p.text {
+    left: 41px;
+  }
+  .item i.de {
+    right: 9px;
+  }
+  .add-to-do {
+    width: 280px;
+    height: 35px;
+  }
+  .add-to-do i {
+    font-size: 34px;
+  }
+  .add-to-do input {
+    width: 240px;
+  }
+}
